@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plan Crece — LOOKally</title>
+<meta name="description" content="Crece tu negocio con marketing a la medida. Elegimos los canales que tu negocio necesita y los trabajamos cada mes. Posicionamiento local, reputación, contenido y publicidad. $240.000 CLP/mes.">
+<meta property="og:title" content="Plan Crece — LOOKally">
+<meta property="og:description" content="Elegimos los canales que tu negocio necesita y los trabajamos cada mes. Acompañamiento mensual desde $240.000 CLP/mes.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0D0C'/%3E%3Ccircle cx='21' cy='32' r='12' fill='%23fff'/%3E%3Ccircle cx='43' cy='32' r='12' fill='%23fff'/%3E%3Ccircle cx='23' cy='33' r='5' fill='%2317C77E'/%3E%3Ccircle cx='45' cy='33' r='5' fill='%2317C77E'/%3E%3C/svg%3E">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --ink:#0B0D0C;
+  --ink-2:#141917;
+  --ink-3:#1D2422;
+  --green:#17C77E;
+  --green-d:#0FA968;
+  --violet:#7B61FF;
+  --blue:#3B82F6;
+  --amber:#F5A524;
+  --mist:#F3F5F4;
+  --line:#E3E7E5;
+  --line-d:rgba(255,255,255,.10);
+  --muted:#5C6663;
+  --muted-d:#9AA5A1;
+  --wrap:1220px;
+  --r:26px;
+}
+
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  background:var(--mist);color:var(--ink);
+  overflow-x:hidden;-webkit-font-smoothing:antialiased;
+  line-height:1.55;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.slab{max-width:var(--wrap);margin:0 auto;border-radius:var(--r);overflow:hidden}
+section{position:relative}
+
+/* ── type ── */
+.display{
+  font-family:'Antonio',Impact,sans-serif;font-weight:700;
+  text-transform:uppercase;line-height:.92;letter-spacing:.005em;
+}
+h2{font-size:clamp(27px,3.3vw,42px);font-weight:800;letter-spacing:-.032em;line-height:1.12}
+h3{font-size:16px;font-weight:700;letter-spacing:-.015em;line-height:1.3}
+.g{color:var(--green)}
+.eyebrow{
+  display:inline-block;font-size:11px;font-weight:700;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--green-d);
+  margin-bottom:16px;
+}
+.eyebrow.on-dark{color:var(--green)}
+.lead{font-size:15.5px;color:var(--muted);max-width:52ch}
+.lead.on-dark{color:var(--muted-d)}
+
+/* ── buttons ── */
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  background:var(--ink);color:#fff;text-decoration:none;
+  padding:15px 24px;border-radius:100px;
+  font-size:14px;font-weight:600;letter-spacing:-.01em;
+  transition:transform .2s cubic-bezier(.22,1,.36,1),background .2s;
+  white-space:nowrap;
+}
+.btn:hover{transform:translateY(-2px);background:#000}
+.btn.green{background:var(--green);color:#04140D}
+.btn.green:hover{background:var(--green-d);color:#fff}
+.btn.light{background:#fff;color:var(--ink)}
+.btn svg{flex:none}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:14px;font-weight:600;text-decoration:none;color:var(--ink);
+  background:none;border:0;cursor:pointer;
+}
+.btn-ghost .play{
+  width:34px;height:34px;border-radius:50%;background:#fff;
+  border:1px solid var(--line);
+  display:grid;place-items:center;flex:none;
+  transition:transform .2s cubic-bezier(.22,1,.36,1);
+}
+.btn-ghost:hover .play{transform:scale(1.08)}
+.btn-ghost span.t{border-bottom:1.5px solid rgba(11,13,12,.28);padding-bottom:1px}
+
+/* ── nav ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:300;
+  padding:20px 0;transition:padding .3s ease,background .3s ease,box-shadow .3s ease;
+}
+nav.stuck{padding:16px 0}
+nav.inv .logo{color:#fff}
+.nav-in{max-width:var(--wrap);margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:16px}
+.logo{
+  display:flex;align-items:center;text-decoration:none;color:var(--ink);
+  font-family:'Inter',sans-serif;font-size:19px;font-weight:800;letter-spacing:-.03em;line-height:1;
+}
+.logo .lt{display:inline-block;overflow:hidden;white-space:nowrap;transition:max-width .42s cubic-bezier(.65,0,.35,1),opacity .28s ease}
+.logo .lt.a{max-width:22px}
+.logo .lt.b{max-width:74px}
+nav.stuck .logo .lt{max-width:0;opacity:0}
+.eye{
+  width:17px;height:17px;border-radius:50%;
+  border:2.4px solid currentColor;background:#fff;
+  display:inline-flex;justify-content:center;align-items:center;
+  position:relative;margin:0 1.5px;flex:none;transform-origin:center;
+}
+.eye-p{width:5.4px;height:5.4px;border-radius:50%;background:var(--green);position:absolute}
+footer .eye{border-color:#fff;background:#fff}
+footer .eye-p{background:var(--green)}
+
+/* ── hero ── */
+.hero{position:relative;min-height:min(88vh,760px);display:flex;align-items:center;overflow:hidden}
+.hero-media{position:absolute;inset:0;z-index:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:62% center}
+.hero-media::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(214,228,238,.94) 0%,rgba(214,228,238,.80) 26%,rgba(214,228,238,.34) 42%,rgba(214,228,238,0) 56%);
+}
+.hero-in{position:relative;z-index:2;width:100%;padding-top:96px;padding-bottom:56px}
+.hero h1{font-size:clamp(33px,5.1vw,74px);margin-bottom:22px}
+.hero h1 .l{display:block;white-space:nowrap}
+.hero-sub{font-size:16px;color:#243029;max-width:44ch;margin-bottom:30px;font-weight:450}
+.hero-cta{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.hero-note{
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  margin-top:22px;font-size:12.5px;color:#3C4844;font-weight:500;
+}
+.hero-note b{font-weight:700;color:var(--ink)}
+.dot{width:3px;height:3px;border-radius:50%;background:#98A5A0;flex:none}
+
+/* ── generic section ── */
+.sec{padding:96px 0}
+.sec-head{max-width:640px;margin-bottom:44px}
+.sec-head .lead{margin-top:14px}
+
+/* ── chips ── */
+.chip{
+  width:44px;height:44px;border-radius:13px;display:grid;place-items:center;
+  margin-bottom:18px;flex:none;
+}
+.chip.c1{background:rgba(23,199,126,.13);color:var(--green-d)}
+.chip.c2{background:rgba(123,97,255,.13);color:var(--violet)}
+.chip.c3{background:rgba(59,130,246,.13);color:var(--blue)}
+.chip.c4{background:rgba(245,165,36,.15);color:#B8770A}
+.on-dark .chip.c1{background:rgba(23,199,126,.16);color:var(--green)}
+.on-dark .chip.c2{background:rgba(123,97,255,.18);color:#A794FF}
+.on-dark .chip.c3{background:rgba(59,130,246,.18);color:#7FB0FA}
+.on-dark .chip.c4{background:rgba(245,165,36,.18);color:var(--amber)}
+
+/* ── cards ── */
+.cards{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g5{grid-template-columns:repeat(5,1fr)}
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px 24px 28px;
+}
+.card p{font-size:13.5px;color:var(--muted);margin-top:9px}
+
+/* ── problema ── */
+.prob-note{
+  margin-top:22px;background:#fff;border:1px solid var(--line);border-radius:18px;
+  padding:20px 24px;display:flex;gap:14px;align-items:flex-start;
+}
+.prob-note svg{color:var(--green-d);flex:none;margin-top:2px}
+.prob-note p{font-size:15px;font-weight:600;letter-spacing:-.015em}
+
+/* ── dark slab ── */
+.dark{background:var(--ink);color:#fff}
+.dark h2,.dark h3{color:#fff}
+.dark .card{background:var(--ink-3);border-color:var(--line-d)}
+.dark .card p{color:var(--muted-d)}
+.slab-pad{padding:60px 48px 64px}
+
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:12px}
+.pillar .num{font-family:'Antonio',sans-serif;font-size:13px;font-weight:700;letter-spacing:.1em;opacity:.55;display:block;margin-bottom:10px}
+.pillar h3{font-size:16.5px;margin-bottom:9px}
+.pillar p{font-size:13.5px;color:var(--muted-d)}
+.pillar{border-top:1px solid var(--line-d);padding-top:22px}
+
+/* ── flow ── */
+.flow{
+  margin-top:52px;background:var(--ink-2);border:1px solid var(--line-d);
+  border-radius:20px;padding:30px 26px;
+  display:flex;align-items:center;gap:10px;
+}
+.flow-item{flex:1;display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;min-width:0}
+.flow-ic{
+  width:52px;height:52px;border-radius:50%;display:grid;place-items:center;
+  border:1px solid var(--line-d);background:rgba(255,255,255,.03);
+}
+.flow-item span{font-size:12px;font-weight:600;color:var(--muted-d);letter-spacing:-.01em}
+.flow-item.hub .flow-ic{background:var(--green);border-color:var(--green);color:#04140D;width:62px;height:62px;box-shadow:0 0 0 8px rgba(23,199,126,.12)}
+.flow-item.hub span{color:#fff;font-weight:700}
+.flow-line{flex:0 0 26px;height:1px;border-top:1.5px dashed rgba(255,255,255,.20)}
+
+/* ── incluye ── */
+.inc-list{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.inc{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px 20px 26px;display:flex;flex-direction:column}
+.inc h3{font-size:15px;margin-bottom:8px}
+.inc p{font-size:13px;color:var(--muted)}
+.inc-foot{
+  margin-top:18px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  font-size:13px;color:var(--muted);
+}
+.tag{
+  display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line);
+  padding:8px 14px;border-radius:100px;font-size:12.5px;font-weight:600;color:var(--ink);
+}
+.tag i{width:6px;height:6px;border-radius:50%;background:var(--green);display:block}
+
+/* ── timeline ── */
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px}
+.tl-item{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px 22px 26px;position:relative}
+.tl-item::before{
+  content:'';position:absolute;top:0;left:24px;right:24px;height:3px;border-radius:0 0 3px 3px;
+}
+.tl-item:nth-child(1)::before{background:var(--green)}
+.tl-item:nth-child(2)::before{background:var(--violet)}
+.tl-item:nth-child(3)::before{background:var(--blue)}
+.tl-item:nth-child(4)::before{background:var(--amber)}
+.tl-when{font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:12px}
+.tl-item h3{font-size:16.5px;margin-bottom:9px}
+.tl-item p{font-size:13.5px;color:var(--muted)}
+.tl-claim{
+  margin-top:22px;border-radius:20px;background:var(--ink);color:#fff;
+  padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap;
+}
+.tl-claim p{font-size:clamp(17px,2vw,22px);font-weight:700;letter-spacing:-.025em;max-width:30ch}
+.tl-claim span{font-size:13px;color:var(--muted-d);max-width:34ch}
+
+/* ── rubros ── */
+.rubros{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:36px}
+.rubro{border-radius:18px;overflow:hidden;position:relative;aspect-ratio:3/3.6;background:#101416}
+.rubro img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.rubro::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(8,11,10,0) 34%,rgba(8,11,10,.28) 52%,rgba(8,11,10,.72) 78%,rgba(8,11,10,.93) 100%)}
+.rubro-t{position:absolute;left:0;right:0;bottom:0;padding:18px 16px;z-index:2}
+.rubro-t strong{display:block;font-size:14px;font-weight:700;letter-spacing:-.015em}
+.rubro-t span{display:block;font-size:12px;color:rgba(255,255,255,.66);margin-top:4px}
+
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}
+.fit-card{background:var(--ink-3);border:1px solid var(--line-d);border-radius:20px;padding:26px 26px 28px}
+.fit-card h3{font-size:15px;margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.fit-card ul{list-style:none;display:grid;gap:14px}
+.fit-card li{display:flex;gap:11px;align-items:flex-start;font-size:14px}
+.fit-card li svg{flex:none;margin-top:2px}
+.fit-card li b{font-weight:600}
+.yes svg{color:var(--green)}
+.no svg{color:#FF7A6B}
+.no li{color:var(--muted-d)}
+
+/* ── plan ── */
+.plan-grid{display:grid;grid-template-columns:1fr .92fr .58fr;gap:18px;align-items:stretch}
+.plan-media{border-radius:22px;overflow:hidden;position:relative;background:#E4E9E7;min-height:100%}
+.plan-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.price{
+  background:var(--ink);color:#fff;border-radius:24px;padding:34px 34px 36px;position:relative;overflow:hidden;
+}
+.price::after{
+  content:'';position:absolute;width:280px;height:280px;right:-90px;top:-110px;border-radius:50%;
+  background:radial-gradient(circle,rgba(23,199,126,.30),transparent 68%);
+}
+.price-top{display:flex;align-items:center;justify-content:space-between;gap:14px;position:relative;z-index:2}
+.price-top strong{font-size:19px;font-weight:800;letter-spacing:-.03em}
+.badge{background:var(--green);color:#04140D;font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:6px 11px;border-radius:100px}
+.amount{display:flex;align-items:baseline;gap:9px;margin:22px 0 6px;position:relative;z-index:2}
+.amount b{font-family:'Antonio',sans-serif;font-size:60px;font-weight:700;line-height:1;letter-spacing:.005em}
+.amount span{font-size:13px;color:var(--muted-d);font-weight:500}
+.price>p{font-size:13.5px;color:var(--muted-d);position:relative;z-index:2;max-width:36ch}
+.price ul{list-style:none;display:grid;gap:12px;margin:24px 0 26px;position:relative;z-index:2}
+.price li{display:flex;gap:10px;align-items:flex-start;font-size:14px}
+.price li svg{color:var(--green);flex:none;margin-top:3px}
+.price .btn{position:relative;z-index:2}
+.price-note{margin-top:14px;font-size:12px;color:var(--muted-d);position:relative;z-index:2}
+
+.faq{display:grid;gap:12px}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px 24px}
+.faq-item h3{font-size:14.5px;margin-bottom:7px}
+.faq-item p{font-size:13.5px;color:var(--muted)}
+
+/* ── cierre ── */
+.close{position:relative;overflow:hidden;background:var(--ink);border-radius:var(--r);color:#fff}
+/* franja horizontal: la foto atraviesa el bloque y se difumina a los costados */
+.close-photo{position:absolute;inset:0;z-index:0}
+.close-photo img{width:100%;height:100%;object-fit:cover;object-position:center}
+.close-photo::after{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(90deg,
+    rgba(11,13,12,.90) 0%,
+    rgba(11,13,12,.895) 20%,
+    rgba(11,13,12,.80) 24%,
+    rgba(11,13,12,.69) 28%,
+    rgba(11,13,12,.59) 32%,
+    rgba(11,13,12,.47) 36%,
+    rgba(11,13,12,.32) 40%,
+    rgba(11,13,12,.16) 44%,
+    rgba(11,13,12,.05) 48%,
+    rgba(11,13,12,0)   52%,
+    rgba(11,13,12,0)   60%,
+    rgba(11,13,12,.20) 64%,
+    rgba(11,13,12,.30) 68%,
+    rgba(11,13,12,.41) 72%,
+    rgba(11,13,12,.56) 76%,
+    rgba(11,13,12,.71) 80%,
+    rgba(11,13,12,.80) 84%,
+    rgba(11,13,12,.85) 88%,
+    rgba(11,13,12,.88) 92%,
+    rgba(11,13,12,.88) 100%);
+}
+.close-in{
+  position:relative;z-index:2;padding:58px 46px;min-height:400px;
+  display:grid;grid-template-columns:minmax(0,300px) 1fr minmax(0,205px);
+  gap:30px;align-items:center;
+}
+.close p{max-width:285px}
+.close h2{font-size:clamp(30px,4vw,50px);letter-spacing:-.035em;margin-bottom:14px}
+.close p{color:var(--muted-d);font-size:15px;margin-bottom:28px;max-width:40ch}
+.close-list{display:grid;gap:16px}
+.close-list div{display:flex;align-items:center;gap:12px;font-size:14px;font-weight:600;white-space:nowrap}
+.close-list .chip{width:36px;height:36px;border-radius:50%;margin:0}
+.close-list .chip svg{width:16px;height:16px}
+
+/* ── footer ── */
+footer{background:var(--ink);color:#fff;margin-top:26px}
+.foot-in{max-width:var(--wrap);margin:0 auto;padding:38px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.foot-in .logo{color:#fff;font-size:18px}
+.foot-links{display:flex;gap:22px;flex-wrap:wrap}
+.foot-links a{font-size:13px;color:var(--muted-d);text-decoration:none;transition:color .2s}
+.foot-links a:hover{color:#fff}
+.foot-c{font-size:12px;color:#6C7873}
+
+
+/* ══ CANALES ══ */
+.canal{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:46px 0;border-top:1px solid var(--line)}
+.canal:first-of-type{border-top:0}
+.canal.flip .canal-txt{order:2}
+.canal-txt .kicker{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.canal-txt .kicker span{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.canal-txt h3{font-size:clamp(21px,2.4vw,28px);letter-spacing:-.03em;margin-bottom:12px}
+.canal-txt > p{font-size:15px;color:var(--muted);margin-bottom:18px;max-width:44ch}
+.canal-txt ul{list-style:none;display:grid;gap:9px}
+.canal-txt li{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--ink)}
+.canal-txt li svg{flex:none;margin-top:4px;color:var(--green-d)}
+.canal-vis{
+  background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;
+  box-shadow:0 18px 40px -28px rgba(11,13,12,.35);
+}
+
+/* mockups */
+.mk{font-size:13px;line-height:1.45}
+.mk-row{display:flex;gap:11px;align-items:center}
+.mk-thumb{width:46px;height:46px;border-radius:9px;flex:none;overflow:hidden;position:relative;background:#E7EBE9}
+.mk-thumb img{width:100%;height:100%;object-fit:cover}
+.mk-av{width:32px;height:32px;border-radius:50%;flex:none;display:grid;place-items:center;font-size:13px;font-weight:700;color:#fff;letter-spacing:-.01em}
+.mk-av.a{background:#7B61FF}
+.mk-av.b{background:#E08A2B}
+.mk-logo{width:30px;height:30px;border-radius:50%;flex:none;overflow:hidden}
+.mk-logo img{width:100%;height:100%;object-fit:cover}
+.mk-post-img{overflow:hidden;position:relative}
+.mk-post-img img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.mk-b{height:8px;border-radius:4px;background:#E7EBE9;display:block}
+.mk-stars{color:#F5A524;letter-spacing:1px;font-size:12px}
+.mk-search{display:flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:100px;padding:9px 14px;font-size:12.5px;color:var(--muted);margin-bottom:16px}
+.mk-card{border:1px solid var(--line);border-radius:14px;padding:13px;display:grid;gap:9px}
+.mk-card.on{border-color:rgba(23,199,126,.55);box-shadow:0 0 0 3px rgba(23,199,126,.10)}
+.mk-tag{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:100px}
+.mk-tag.g{background:rgba(23,199,126,.14);color:var(--green-d)}
+.mk-tag.n{background:#EEF1F0;color:var(--muted)}
+.mk-name{font-weight:700;font-size:13.5px;letter-spacing:-.01em}
+.mk-sub{font-size:11.5px;color:var(--muted)}
+.mk-reply{margin-top:9px;margin-left:14px;padding-left:12px;border-left:2px solid rgba(23,199,126,.4);font-size:12px;color:var(--muted)}
+.mk-post{border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.mk-post-img{height:96px;background:linear-gradient(135deg,#d7e0dd,#bcc8c4)}
+.mk-post-body{padding:12px 13px}
+.mk-metrics{display:flex;gap:16px;margin-top:10px;font-size:11.5px;color:var(--muted)}
+
+/* ══ NÚMEROS ══ */
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.num-item{border-left:1px solid var(--line-d);padding-left:22px}
+.num-item b{font-family:'Antonio',sans-serif;font-size:clamp(44px,5.4vw,68px);font-weight:700;line-height:.92;display:block;letter-spacing:.01em}
+.num-item .u{font-size:13px;font-weight:700;color:var(--green);display:block;margin-top:8px}
+.num-item p{font-size:13px;color:var(--muted-d);margin-top:7px}
+
+/* ══ REPORTE ══ */
+.rep-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:center}
+.rep{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 26px 60px -34px rgba(11,13,12,.42)}
+.rep-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line);background:#FAFBFB}
+.rep-top strong{font-size:13.5px;letter-spacing:-.01em}
+.rep-top span{font-size:11.5px;color:var(--muted)}
+.rep-body{padding:20px;display:grid;gap:18px}
+.rep-block > h4{font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.rep-chips{display:flex;gap:7px;flex-wrap:wrap}
+.rep-chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;border:1px solid var(--line);border-radius:100px;padding:5px 11px}
+.rep-chip i{width:6px;height:6px;border-radius:50%;display:block}
+.rep-list{list-style:none;display:grid;gap:7px}
+.rep-list li{display:flex;gap:9px;font-size:12.5px;color:var(--muted);align-items:flex-start}
+.rep-list li svg{flex:none;margin-top:3px;color:var(--green-d)}
+.rep-metrics{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.rep-metric{border:1px solid var(--line);border-radius:11px;padding:10px 12px}
+.rep-metric span{font-size:11px;color:var(--muted);display:block}
+.rep-metric b{font-size:12.5px;letter-spacing:-.01em;display:block;margin-top:3px;color:var(--ink)}
+.rep-foot{padding:13px 20px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);background:#FAFBFB}
+
+/* ══ FAQ ══ */
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+
+
+/* ══ SPLIT texto + foto ══ */
+.split{display:grid;grid-template-columns:1.12fr .88fr;gap:34px;align-items:stretch}
+.split-media{border-radius:22px;overflow:hidden;position:relative;min-height:300px;background:#E4E9E7}
+.split-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.split-media.tall{min-height:380px}
+.dark .split-media{background:var(--ink-3)}
+.head-media{display:grid;grid-template-columns:1fr .62fr;gap:34px;align-items:end;margin-bottom:38px}
+.head-media .split-media{min-height:250px}
+
+/* ══ BANDA ALIANZA ══ */
+.strip{position:relative;border-radius:var(--r);overflow:hidden;min-height:280px;display:flex;align-items:center}
+.strip-bg{position:absolute;inset:0}
+.strip-bg img{width:100%;height:100%;object-fit:cover;object-position:center}
+.strip-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(92deg,rgba(11,13,12,.94) 0%,rgba(11,13,12,.92) 30%,rgba(11,13,12,.74) 48%,rgba(11,13,12,.34) 66%,rgba(11,13,12,.16) 100%)}
+.strip-in{position:relative;z-index:2;padding:54px 48px;display:grid;grid-template-columns:minmax(0,560px) 1fr;gap:40px;align-items:center;width:100%;color:#fff}
+.strip-in h3{font-size:clamp(22px,2.7vw,32px);letter-spacing:-.032em;line-height:1.14}
+.strip-in p{font-size:14.5px;color:var(--muted-d);max-width:52ch;margin-top:14px}
+
+/* ── reveal ── */
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.22,1,.36,1)}
+.js .rv.in{opacity:1;transform:none}
+
+/* ══ responsive ══ */
+@media (max-width:1080px){
+  .split,.head-media{grid-template-columns:1fr;gap:24px}
+  .split-media{min-height:240px;order:2}
+  .head-media .split-media{min-height:220px}
+  .strip-in{grid-template-columns:1fr;gap:20px;padding:40px 32px}
+  .strip-bg::after{background:linear-gradient(180deg,rgba(11,13,12,.93) 0%,rgba(11,13,12,.82) 60%,rgba(11,13,12,.62) 100%)}
+  .canal{grid-template-columns:1fr;gap:26px;padding:34px 0}
+  .canal.flip .canal-txt{order:0}
+  .canal-txt > p,.canal-txt ul{max-width:none}
+  .rep-grid{grid-template-columns:1fr;gap:28px}
+  .nums{grid-template-columns:1fr 1fr;gap:22px}
+  .faq-grid{grid-template-columns:1fr}
+  .g5,.inc-list,.rubros{grid-template-columns:repeat(3,1fr)}
+  .pillars{grid-template-columns:repeat(2,1fr);gap:22px}
+  .tl{grid-template-columns:repeat(2,1fr)}
+  .slab-pad{padding:48px 32px 52px}
+  .close-in{padding:48px 32px;min-height:340px;grid-template-columns:1fr;gap:26px}
+  .close-in > div:nth-child(2){display:none}
+  .close-photo img{object-position:center 42%}
+  .close-photo::after{background:linear-gradient(180deg,rgba(11,13,12,.95) 0%,rgba(11,13,12,.92) 42%,rgba(11,13,12,.80) 74%,rgba(11,13,12,.90) 100%)}
+  .close-list{grid-template-columns:1fr 1fr;gap:12px}
+  .plan-grid{grid-template-columns:1fr}
+  .plan-media{min-height:240px}
+}
+@media (max-width:820px){
+  .sec{padding:66px 0}
+  :root{--r:22px}
+  .hero{min-height:0;display:block}
+  .hero-media{position:relative;inset:auto;margin:30px auto 0;width:calc(100% - 48px);border-radius:22px;overflow:hidden;aspect-ratio:4/4.4;max-width:520px}
+  .hero-media::after{display:none}
+  .hero-media img{object-position:center}
+  .hero-in{padding-top:104px;padding-bottom:0}
+  .hero h1{max-width:none}
+  .hero-sub{max-width:none}
+  .g3,.g4,.g5,.inc-list,.rubros,.fit,.tl{grid-template-columns:1fr 1fr}
+  .flow{flex-direction:column;gap:16px;padding:26px 22px}
+  .flow-line{flex:none;width:1px;height:18px;border-top:0;border-left:1.5px dashed rgba(255,255,255,.20)}
+  .flow-item{flex-direction:row;gap:14px;text-align:left;width:100%;max-width:260px}
+  .tl-claim{padding:24px 24px}
+}
+@media (max-width:560px){
+  .nums{grid-template-columns:1fr}
+  .rep-metrics{grid-template-columns:1fr}
+  .canal-vis{padding:18px}
+  .wrap,.nav-in,.foot-in{padding-left:18px;padding-right:18px}
+  .slab-pad{padding:38px 22px 42px}
+  .g3,.g4,.g5,.inc-list,.rubros,.fit,.tl{grid-template-columns:1fr}
+  .pillars{grid-template-columns:1fr}
+  .close-list{grid-template-columns:1fr}
+  .hero-media{margin:26px auto 0;width:calc(100% - 36px);aspect-ratio:4/4.6}
+  nav .btn{padding:12px 18px;font-size:13px}
+  .logo{font-size:17px}
+  .hero-cta{gap:14px}
+  .hero-cta .btn{width:100%;justify-content:center}
+  .price{padding:28px 24px 30px}
+  .amount b{font-size:52px}
+  .foot-in{flex-direction:column;align-items:flex-start;gap:16px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none;transition:none}
+  *{animation:none!important}
+}
+
+
+/* =========================================================
+   AJUSTES DE PULIDO
+   Todo lo de este bloque es nuevo; las reglas de arriba no
+   se tocaron (salvo quitar CSS sin uso). Borrar el bloque
+   revierte tamaños, listas y colores.
+   ========================================================= */
+
+/* ojos del logo, sin librería */
+.eye{transition:transform .08s ease}
+.eye.blink{transform:scaleY(.05)}
+.eye-p{transition:transform .25s ease-out}
+
+/* -- 1. Letra más grande -- */
+.eyebrow{font-size:12px}
+.lead{font-size:17px}
+.hero-sub{font-size:17.5px}
+.hero-note{font-size:14px}
+.card p{font-size:15px}
+.split .card p{font-size:14.5px}
+.split .card h3{font-size:17px}
+.prob-note p{font-size:17px}
+.canal-txt > p{font-size:16.5px}
+.canal-txt li{font-size:15.5px}
+.canal-txt .kicker span{font-size:12px}
+.pillar p{font-size:15px}
+.pillar .num{font-size:14px}
+.num-item .u{font-size:14px}
+.num-item p{font-size:14.5px}
+.inc p{font-size:14.5px}
+.inc-foot{font-size:14px}
+.tag{font-size:13.5px}
+.tl-when{font-size:12px}
+.tl-item p{font-size:15px}
+.tl-claim span{font-size:14.5px}
+.strip-in p{font-size:16px}
+.rubro-t strong{font-size:15.5px}
+.rubro-t span{font-size:13.5px}
+.fit-card li{font-size:15.5px}
+.price>p{font-size:14.5px}
+.price li{font-size:15px}
+.price-note{font-size:13px}
+.faq-item p{font-size:15px}
+.faq-item li{font-size:14.5px !important}
+.close p{font-size:16px}
+.close-list div{font-size:15px}
+.foot-links a{font-size:14px}
+.foot-c{font-size:13px}
+
+/* Tu parte y la nuestra */
+.nums.two{grid-template-columns:1fr 1fr}
+.nums.two .num-item b{text-transform:uppercase}
+.nums.two .num-item p{max-width:44ch}
+@media (max-width:560px){.nums.two{grid-template-columns:1fr}}
+
+/* -- 3. Un escalón intermedio entre el título (42) y el texto -- */
+.card h3{font-size:19px}
+.pillar h3{font-size:20px}
+.inc h3{font-size:17px}
+.tl-item h3{font-size:20px}
+.fit-card h3{font-size:17px}
+.faq-item h3{font-size:17px}
+
+/* -- 4. Preguntas como filas (Problema, Incluye y Mes a mes conservan sus tarjetas) -- */
+/* preguntas: filas con línea, sin caja */
+.faq-grid{gap:0 44px}
+.faq-grid .faq-item{background:none;border:0;border-top:1px solid var(--line);border-radius:0;padding:24px 0 26px}
+.faq-grid .faq-item h3{font-size:18px}
+.faq-grid .faq-item p{font-size:15.5px}
+
+/* -- Cómo trabajamos: tarjetas con número, en escalera -- */
+.tl{gap:18px}
+.tl .tl-item{padding:26px 26px 32px;border-top:4px solid var(--green);overflow:hidden}
+.tl .tl-item::before{
+  position:static;display:block;width:auto;height:auto;border-radius:0;
+  font-family:'Antonio',sans-serif;font-weight:700;font-size:76px;line-height:.85;letter-spacing:.01em;margin-bottom:20px;
+}
+.tl .tl-item:nth-child(1)::before{content:'01';color:var(--green);background:none}
+.tl .tl-item:nth-child(2)::before{content:'02';color:var(--violet);background:none}
+.tl .tl-item:nth-child(3)::before{content:'03';color:var(--blue);background:none}
+.tl .tl-item:nth-child(4)::before{content:'+';color:var(--amber);background:none}
+.tl .tl-item:nth-child(1){background:linear-gradient(180deg,rgba(23,199,126,.11),#fff 48%)}
+.tl .tl-item:nth-child(2){border-top-color:var(--violet);background:linear-gradient(180deg,rgba(123,97,255,.10),#fff 48%)}
+.tl .tl-item:nth-child(3){border-top-color:var(--blue);background:linear-gradient(180deg,rgba(59,130,246,.10),#fff 48%)}
+.tl .tl-item:nth-child(4){border-top-color:var(--amber);background:linear-gradient(180deg,rgba(245,165,36,.12),#fff 48%)}
+.tl .tl-item h3{font-size:21px;margin-bottom:10px}
+.tl .tl-item p{line-height:1.55}
+@media (min-width:1081px){
+  /* la escalera solo cuando las cuatro van en una fila */
+  .tl .tl-item:nth-child(1){margin-top:96px}
+  .tl .tl-item:nth-child(2){margin-top:64px}
+  .tl .tl-item:nth-child(3){margin-top:32px}
+}
+@media (max-width:560px){
+  .tl .tl-item::before{font-size:60px;margin-bottom:14px}
+}
+
+/* -- 2 y 10. Celular -- */
+@media (max-width:820px){
+  .hero h1{font-size:clamp(38px,13.3vw,74px)}
+  /* preguntas plegables */
+  .js .faq-grid .faq-item{padding:0}
+  .js .faq-grid .faq-item h3{margin:0;padding:18px 36px 18px 0;position:relative;cursor:pointer}
+  .js .faq-grid .faq-item h3::after{
+    content:'+';position:absolute;right:2px;top:13px;font-size:24px;font-weight:400;line-height:1;
+    color:var(--green-d);transition:transform .25s ease;
+  }
+  .js .faq-grid .faq-item.open h3::after{transform:rotate(45deg)}
+  .js .faq-grid .faq-item p{display:none;padding-bottom:20px}
+  .js .faq-grid .faq-item.open p{display:block}
+}
+@media (max-width:560px){
+  /* entregables: icono a la izquierda, más bajos */
+  .inc{display:grid;grid-template-columns:44px 1fr;column-gap:16px;padding:20px 18px}
+  .inc .chip{margin:0;grid-row:1 / span 2}
+  .inc h3{margin-bottom:4px}
+  /* rubros: una fila que se desliza con el dedo, en vez de cinco fotos apiladas */
+  .rubros{
+    display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;
+    margin-right:-22px;padding-right:22px;scrollbar-width:none;-webkit-overflow-scrolling:touch;
+  }
+  .rubros::-webkit-scrollbar{display:none}
+  .rubro{flex:0 0 66%;scroll-snap-align:start}
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════ NAV ══════════ -->
+<nav id="nav">
+  <div class="nav-in">
+    <a class="logo" href="index.html" aria-label="LOOKally">
+      <span class="lt a">L</span>
+      <span class="eye" id="e1"><span class="eye-p" id="p1"></span></span>
+      <span class="eye" id="e2"><span class="eye-p" id="p2"></span></span>
+      <span class="lt b">kally</span>
+    </a>
+  </div>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero">
+  <div class="hero-in">
+    <div class="wrap">
+      <span class="eyebrow">Plan Crece &nbsp;·&nbsp; Acompañamiento mensual</span>
+      <h1 class="display">
+        <span class="l">Crece tu negocio</span>
+        <span class="l g">con marketing</span>
+        <span class="l g">a la medida.</span>
+      </h1>
+      <p class="hero-sub">Elegimos los canales que tu negocio necesita y los trabajamos cada mes. Posicionamiento local, reputación, contenido y publicidad.</p>
+      <div class="hero-cta">
+        <a class="btn" target="_blank" rel="noopener" href="https://wa.me/56935049582?text=Hola%2C%20quiero%20contratar%20el%20plan%20Crece%20de%20%24240.000%20CLP/mes.">
+          Quiero el plan Crece
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn-ghost" href="#incluye">
+          <span class="play"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="t">Ver qué incluye</span>
+        </a>
+      </div>
+      <div class="hero-note">
+        <b>$240.000 CLP/mes</b> <span class="dot"></span> Sin contratos forzados <span class="dot"></span> Cancela cuando quieras
+      </div>
+    </div>
+  </div>
+  <div class="hero-media">
+    <picture>
+      <source media="(max-width:820px)" srcset="assets/hero-mobile.jpg">
+      <img src="assets/hero-wide.jpg" alt="Un niño de gran tamaño junto a un adulto, metáfora del crecimiento de un negocio pequeño" fetchpriority="high">
+    </picture>
+  </div>
+</section>
+
+<!-- ══════════ 2 · EL PROBLEMA ══════════ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="split">
+    <div>
+    <div class="sec-head rv" style="margin-bottom:28px">
+      <span class="eyebrow">El problema</span>
+      <h2>Hacer marketing a ratos<br><span class="g">no hace crecer un negocio.</span></h2>
+    </div>
+    <div class="cards g3">
+      <div class="card rv">
+        <div class="chip c1"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="8" cy="18" r="2.4"/><circle cx="18" cy="17" r="2.4"/></svg></div>
+        <h3>Esfuerzos sueltos</h3>
+        <p>Una publicación aquí, una promoción allá. Nada se conecta con nada.</p>
+      </div>
+      <div class="card rv">
+        <div class="chip c2"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18"/><path d="M6 20V13M11 20V9M16 20v-4"/><path d="M20 5.5 16 9l-2.5-2L9 11"/></svg></div>
+        <h3>Sin medición</h3>
+        <p>No hay forma de saber qué trajo clientes y qué solo consumió tiempo.</p>
+      </div>
+      <div class="card rv">
+        <div class="chip c4"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Sin continuidad</h3>
+        <p>El mes que se trabaja hay movimiento. El mes que no, se apaga.</p>
+      </div>
+    </div>
+    <div class="prob-note rv">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.2v.1"/></svg>
+      <p>Así se llega a meses buenos y meses malos, sin saber qué los diferencia.</p>
+    </div>
+    </div>
+    <div class="split-media tall rv">
+      <img src="assets/problema.jpg" alt="Dueño de un negocio local revisando su teléfono" loading="lazy">
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════ 3 · LOS CANALES ══════════ -->
+<section class="sec" id="canales" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Los canales</span>
+      <h2>Cuatro frentes.<br><span class="g">Trabajamos hasta tres.</span></h2>
+      <p class="lead">Ningún negocio necesita los cuatro al mismo tiempo. Elegimos los que mueven la aguja en el tuyo y esos son los que ejecutamos todos los meses.</p>
+    </div>
+
+    <div class="canal rv">
+      <div class="canal-txt">
+        <div class="kicker"><span class="chip c1" style="width:34px;height:34px;border-radius:9px;margin:0"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></svg></span><span>Canal 01</span></div>
+        <h3>Posicionamiento local</h3>
+        <p>Que aparezcas cuando alguien cerca busca lo que vendes, en Google y en Maps.</p>
+        <ul>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Ficha de Google Business completa, con horarios, servicios y fotos al día.</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Categorías y palabras con las que realmente te buscan en tu zona.</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Publicaciones periódicas en la ficha para mantenerla activa.</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Seguimiento de posición frente a tus competidores directos.</li>
+        </ul>
+      </div>
+      <div class="canal-vis mk">
+        <div class="mk-search"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg> cafetería cerca de mí</div>
+        <div style="display:grid;gap:9px">
+          <div class="mk-card on">
+            <div class="mk-row">
+              <span class="mk-thumb"><img src="assets/mk-negocio.jpg" alt="" loading="lazy"></span>
+              <div style="flex:1;min-width:0">
+                <div class="mk-name">Tu negocio</div>
+                <div class="mk-sub"><span class="mk-stars">★★★★★</span> 4.8 · Abierto ahora</div>
+              </div>
+              <span class="mk-tag g">1º</span>
+            </div>
+          </div>
+          <div class="mk-card">
+            <div class="mk-row">
+              <span class="mk-thumb"><img src="assets/mk-comp-a.jpg" alt="" loading="lazy"></span>
+              <div style="flex:1;min-width:0">
+                <div class="mk-name" style="color:var(--muted)">Competencia</div>
+                <div class="mk-sub"><span class="mk-stars">★★★★</span> 4.2 · Abierto ahora</div>
+              </div>
+              <span class="mk-tag n">2º</span>
+            </div>
+          </div>
+          <div class="mk-card">
+            <div class="mk-row">
+              <span class="mk-thumb"><img src="assets/mk-comp-b.jpg" alt="" loading="lazy"></span>
+              <div style="flex:1;min-width:0">
+                <div class="mk-name" style="color:var(--muted)">Competencia</div>
+                <div class="mk-sub"><span class="mk-stars">★★★★</span> 4.1 · Cerrado</div>
+              </div>
+              <span class="mk-tag n">3º</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="canal flip rv">
+      <div class="canal-txt">
+        <div class="kicker"><span class="chip c2" style="width:34px;height:34px;border-radius:9px;margin:0"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.6 5.6 6 .7-4.5 4.1 1.3 6-5.4-3.1L6.6 19.4l1.3-6-4.5-4.1 6-.7L12 3Z"/></svg></span><span>Canal 02</span></div>
+        <h3>Reputación</h3>
+        <p>Las reseñas deciden. Trabajamos para que tengas más, mejores y bien respondidas.</p>
+        <ul>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Sistema para pedir reseñas a quienes ya te compraron, sin incomodar.</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Respuesta a todas las reseñas, incluidas las malas, en tono de tu negocio.</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Alerta cuando aparece una reseña negativa, para actuar el mismo día.</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Revisión mensual de qué dicen de ti y qué dicen de tu competencia.</li>
+        </ul>
+      </div>
+      <div class="canal-vis mk">
+        <div class="mk-card" style="border:0;padding:0;gap:14px">
+          <div>
+            <div class="mk-row" style="margin-bottom:6px">
+              <span class="mk-av a">C</span>
+              <div><div class="mk-name">Camila R.</div><div class="mk-sub"><span class="mk-stars">★★★★★</span> hace 2 días</div></div>
+            </div>
+            <p style="font-size:12.5px;color:var(--muted)">Excelente atención y muy rápidos. Volvería sin dudarlo.</p>
+            <div class="mk-reply"><strong style="color:var(--ink)">Respuesta del negocio</strong><br>Gracias Camila, te esperamos pronto.</div>
+          </div>
+          <div style="border-top:1px solid var(--line);padding-top:14px">
+            <div class="mk-row" style="margin-bottom:6px">
+              <span class="mk-av b">R</span>
+              <div><div class="mk-name">Rodrigo P.</div><div class="mk-sub"><span class="mk-stars">★★★</span> hace 5 días</div></div>
+            </div>
+            <p style="font-size:12.5px;color:var(--muted)">Buen producto pero tuve que esperar bastante.</p>
+            <div class="mk-reply"><strong style="color:var(--ink)">Respuesta del negocio</strong><br>Tienes razón, ese día íbamos con retraso. Ya sumamos personal en horario peak.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="canal rv">
+      <div class="canal-txt">
+        <div class="kicker"><span class="chip c3" style="width:34px;height:34px;border-radius:9px;margin:0"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 3.5a2.6 2.6 0 0 1 3.7 3.7L8 19.4l-4.6 1.2 1.2-4.6 11.9-12.5Z"/></svg></span><span>Canal 03</span></div>
+        <h3>Contenido</h3>
+        <p>Publicaciones que muestran lo que haces y responden lo que la gente pregunta antes de comprar.</p>
+        <ul>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Calendario mensual con los temas que a tu cliente le interesan.</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Piezas listas para publicar, con texto e imagen, en los canales que usas.</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Reutilización de lo que ya funcionó, en vez de partir de cero cada mes.</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Tú apruebas antes de que salga. Nada se publica a tus espaldas.</li>
+        </ul>
+      </div>
+      <div class="canal-vis mk">
+        <div class="mk-post">
+          <div class="mk-post-img"><img src="assets/mk-post.jpg" alt="" loading="lazy"></div>
+          <div class="mk-post-body">
+            <div class="mk-row" style="margin-bottom:8px">
+              <span class="mk-logo"><img src="assets/mk-negocio.jpg" alt="" loading="lazy"></span>
+              <div><div class="mk-name">Tu negocio</div><div class="mk-sub">Publicado el martes</div></div>
+            </div>
+            <p style="font-size:12.5px;color:var(--muted)">Tres cosas que conviene saber antes de elegir. Te las contamos en 30 segundos.</p>
+            <div class="mk-metrics">
+              <span>142 vistas</span><span>18 interacciones</span><span>6 consultas</span>
+            </div>
+          </div>
+        </div>
+        <p style="font-size:11px;color:var(--dim,#98A5A0);margin-top:10px">Ejemplo del formato. Los datos son los de tu negocio.</p>
+      </div>
+    </div>
+
+    <div class="canal flip rv">
+      <div class="canal-txt">
+        <div class="kicker"><span class="chip c4" style="width:34px;height:34px;border-radius:9px;margin:0"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 12-5v14L3 14v-4Z"/><path d="M6.5 15.2V19a1.6 1.6 0 0 0 3.2 0v-2.6"/></svg></span><span>Canal 04</span></div>
+        <h3>Publicidad</h3>
+        <p>Anuncios acotados a tu zona, para llegar a quien ya está buscando lo que ofreces.</p>
+        <ul>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Campañas segmentadas por comuna, horario y tipo de búsqueda.</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Textos y creatividades escritas para tu negocio, no plantillas.</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Ajuste semanal según lo que trae consultas y lo que solo gasta.</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> La inversión en anuncios la defines tú y la pagas directo a la plataforma.</li>
+        </ul>
+      </div>
+      <div class="canal-vis mk">
+        <div class="mk-card on">
+          <span class="mk-tag n" style="width:fit-content">Patrocinado</span>
+          <div class="mk-name">Tu negocio · Viña del Mar</div>
+          <p style="font-size:12.5px;color:var(--muted)">Atención el mismo día. Reserva por WhatsApp en un minuto.</p>
+          <div class="mk-row" style="gap:7px"><span class="mk-tag g">Llamar</span><span class="mk-tag n">Cómo llegar</span></div>
+        </div>
+        <div style="display:grid;gap:9px;margin-top:12px">
+          <div class="mk-card" style="gap:5px">
+            <div class="mk-name" style="color:var(--muted)">Competencia · Valparaíso</div>
+            <p style="font-size:12px;color:var(--dim,#98A5A0)">Servicio profesional a domicilio.</p>
+          </div>
+          <div class="mk-card" style="gap:5px">
+            <div class="mk-name" style="color:var(--muted)">Competencia · Viña del Mar</div>
+            <p style="font-size:12px;color:var(--dim,#98A5A0)">Consulta sin costo, agenda online.</p>
+          </div>
+        </div>
+        <p style="font-size:11px;color:#98A5A0;margin-top:10px">Tu anuncio arriba, en la búsqueda donde te conviene aparecer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 4 · EL SISTEMA ══════════ -->
+<section style="padding-bottom:96px">
+  <div class="slab dark on-dark">
+    <div class="slab-pad">
+      <div class="sec-head rv" style="max-width:720px">
+        <span class="eyebrow on-dark">El sistema</span>
+        <h2>La diferencia no es suerte.<br><span class="g">Es sistema.</span></h2>
+        <p class="lead on-dark">Trabajamos contigo todos los meses para que lo que ya tienes empiece a dar más resultados. Cuatro pasos, siempre en el mismo orden.</p>
+      </div>
+      <div class="split" style="gap:40px">
+      <div>
+      <div class="pillars" style="grid-template-columns:1fr 1fr">
+        <div class="pillar rv">
+          <span class="num">01</span>
+          <h3>Activamos canales que traen clientes</h3>
+          <p>Ponemos a trabajar los canales elegidos para llegar a más personas interesadas en lo que ofreces.</p>
+        </div>
+        <div class="pillar rv">
+          <span class="num">02</span>
+          <h3>Mejoramos cómo te encuentran y cómo te eligen</h3>
+          <p>Optimizamos tu presencia, tus mensajes y tu propuesta para que te elijan a ti y no a tu competencia.</p>
+        </div>
+        <div class="pillar rv">
+          <span class="num">03</span>
+          <h3>Ajustamos tu proceso para convertir más</h3>
+          <p>Revisamos cada paso del camino para que más consultas terminen siendo clientes.</p>
+        </div>
+        <div class="pillar rv">
+          <span class="num">04</span>
+          <h3>Te mostramos qué repetir y qué eliminar</h3>
+          <p>Decisiones con datos reales, para que inviertas tiempo y dinero solo en lo que sí funciona.</p>
+        </div>
+      </div>
+      </div>
+      <div class="split-media tall rv">
+        <img src="assets/sistema.jpg" alt="Trabajo mensual sobre los canales del negocio" loading="lazy">
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════ 5 · TU PARTE Y LA NUESTRA ══════════ -->
+<section style="padding-bottom:96px">
+  <div class="slab dark on-dark">
+    <div class="slab-pad" style="padding-top:52px;padding-bottom:54px">
+      <span class="eyebrow on-dark rv">Tu parte y la nuestra</span>
+      <div class="nums two" style="margin-top:26px">
+        <div class="num-item rv"><b>30 min</b><span class="u">Lo que te toca a ti, cada mes</span><p>Una llamada para revisar y decidir juntos, más las aprobaciones de contenido, que toman unos minutos.</p></div>
+        <div class="num-item rv"><b>El resto</b><span class="u">Lo hacemos nosotros</span><p>La ejecución en los canales activos, el contenido, las campañas, las respuestas a reseñas y el reporte de fin de mes.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 6 · QUÉ INCLUYE ══════════ -->
+<section class="sec" id="incluye" style="padding-top:0">
+  <div class="wrap">
+    <div class="head-media">
+      <div class="sec-head rv" style="margin-bottom:0">
+        <span class="eyebrow">Qué incluye</span>
+        <h2>Todo lo que incluye el plan.<br><span class="g">Sin letra chica.</span></h2>
+        <p class="lead" style="margin-top:14px">Cinco entregables concretos. Lo que no está en esta lista, no te lo vamos a prometer.</p>
+      </div>
+      <div class="split-media rv"><img src="assets/incluye.jpg" alt="Plan de trabajo del mes" loading="lazy"></div>
+    </div>
+    <div class="inc-list">
+      <div class="inc rv">
+        <div class="chip c1"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2.1 2.1M16.9 16.9 19 19M19 5l-2.1 2.1M7.1 16.9 5 19"/></svg></div>
+        <h3>Trabajo activo en hasta 3 canales</h3>
+        <p>Elegimos los de mayor potencial para tu negocio y los trabajamos todos los meses.</p>
+      </div>
+      <div class="inc rv">
+        <div class="chip c2"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16M4 10h16M4 15h10M4 20h7"/></svg></div>
+        <h3>Estrategia de contenido y posicionamiento</h3>
+        <p>Adaptada a tu negocio, para que te encuentren y para que te diferencies del resto.</p>
+      </div>
+      <div class="inc rv">
+        <div class="chip c3"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h2l2.4 10.4A2 2 0 0 0 9.3 17h7.6a2 2 0 0 0 2-1.5L20.5 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="17.5" cy="20" r="1.2"/></svg></div>
+        <h3>Optimización de rutas de compra o atención</h3>
+        <p>Mejoramos la experiencia desde el primer contacto hasta que la venta se concreta.</p>
+      </div>
+      <div class="inc rv">
+        <div class="chip c4"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8 16v-4M12 16V8M16 16v-6"/></svg></div>
+        <h3>Reporte mensual con análisis</h3>
+        <p>Qué funcionó, qué mejoró y qué vamos a hacer el mes siguiente. En lenguaje claro.</p>
+      </div>
+      <div class="inc rv">
+        <div class="chip c1"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16.5v2.6a2 2 0 0 1-2.2 2 19.5 19.5 0 0 1-8.5-3 19.2 19.2 0 0 1-5.9-5.9 19.5 19.5 0 0 1-3-8.6A2 2 0 0 1 3.4 1.4H6a2 2 0 0 1 2 1.7c.1 1 .3 1.9.6 2.8a2 2 0 0 1-.4 2.1L7 9.2a16 16 0 0 0 5.8 5.8l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.8.6a2 2 0 0 1 1.7 2Z"/></svg></div>
+        <h3>Llamada de seguimiento de 30 min</h3>
+        <p>Cada mes revisamos los avances y definimos juntos los próximos pasos.</p>
+      </div>
+    </div>
+    <div class="inc-foot rv">
+      <span class="tag"><i></i> Un equipo a tu lado</span>
+      <span class="tag"><i></i> Estrategia, ejecución y medición</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 7 · MES A MES ══════════ -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Cómo trabajamos</span>
+      <h2>Así se ve el trabajo,<br><span class="g">mes a mes.</span></h2>
+      <p class="lead">No vendemos una campaña que se lanza y se olvida. Vendemos un ciclo que se repite y mejora.</p>
+    </div>
+    <div class="tl">
+      <div class="tl-item rv">
+        <span class="tl-when">Mes 1</span>
+        <h3>Entendemos y elegimos</h3>
+        <p>Revisamos tu negocio, definimos los canales que vamos a trabajar y dejamos una línea base medida.</p>
+      </div>
+      <div class="tl-item rv">
+        <span class="tl-when">Mes 2</span>
+        <h3>Ejecutamos</h3>
+        <p>Los canales corriendo, contenido publicado y tu presencia optimizada. Llega tu primer reporte.</p>
+      </div>
+      <div class="tl-item rv">
+        <span class="tl-when">Mes 3</span>
+        <h3>Ajustamos</h3>
+        <p>Ya hay datos tuyos sobre la mesa. Cortamos lo que no está rindiendo y reforzamos lo que sí.</p>
+      </div>
+      <div class="tl-item rv">
+        <span class="tl-when">De ahí en adelante</span>
+        <h3>Sostenemos</h3>
+        <p>Ejecución, reporte, llamada y decisiones. Cada mes se construye sobre el anterior.</p>
+      </div>
+    </div>
+    <div class="tl-claim rv">
+      <p>No prometemos un número. Prometemos un método y que lo veas cada mes.</p>
+      <span>Cada mes ves qué se hizo, qué cambió y qué viene.</span>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ══════════ 7b · BANDA ══════════ -->
+<section style="padding-bottom:96px">
+  <div class="wrap" style="padding:0">
+    <div class="strip rv">
+      <div class="strip-bg">
+        <img src="assets/equipo.jpg" alt="Conversación mensual entre el negocio y el equipo" loading="lazy">
+      </div>
+      <div class="strip-in">
+        <div>
+          <h3>No somos un proveedor al que le mandas tareas.<br><span class="g">Trabajamos contigo todos los meses.</span></h3>
+          <p>Una llamada al mes, decisiones tomadas entre los dos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 8 · EL REPORTE ══════════ -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="rep-grid">
+      <div class="rv">
+        <span class="eyebrow">Lo que recibes</span>
+        <h2>El reporte que llega<br><span class="g">a fin de mes.</span></h2>
+        <p class="lead" style="margin-top:14px">La mayoría de las agencias te manda un tablero lleno de gráficos que nadie mira. Nosotros mandamos cuatro cosas: qué canales trabajamos, qué hicimos, qué se midió y qué vamos a hacer el mes siguiente.</p>
+        <p class="lead" style="margin-top:14px">Si algo no está funcionando, el reporte lo dice. Esa es la parte que nadie escribe y la que hace que el trabajo sirva.</p>
+      </div>
+      <div class="rep rv">
+        <div class="rep-top">
+          <strong>Reporte mensual</strong>
+          <span>Tu negocio · Marzo</span>
+        </div>
+        <div class="rep-body">
+          <div class="rep-block">
+            <h4>Canales trabajados</h4>
+            <div class="rep-chips">
+              <span class="rep-chip"><i style="background:var(--green)"></i> Posicionamiento local</span>
+              <span class="rep-chip"><i style="background:var(--violet)"></i> Reputación</span>
+              <span class="rep-chip"><i style="background:var(--blue)"></i> Contenido</span>
+            </div>
+          </div>
+          <div class="rep-block">
+            <h4>Qué hicimos</h4>
+            <ul class="rep-list">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Ficha de Google actualizada con servicios y fotos nuevas.</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> 11 reseñas solicitadas, 7 publicadas, todas respondidas.</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> 4 publicaciones en los canales activos.</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Ajuste del mensaje de bienvenida en WhatsApp.</li>
+            </ul>
+          </div>
+          <div class="rep-block">
+            <h4>Qué se midió</h4>
+            <div class="rep-metrics">
+              <div class="rep-metric"><span>Consultas recibidas</span><b>vs. mes anterior</b></div>
+              <div class="rep-metric"><span>Llamadas desde la ficha</span><b>vs. mes anterior</b></div>
+              <div class="rep-metric"><span>Reseñas nuevas</span><b>y calificación media</b></div>
+              <div class="rep-metric"><span>Posición en búsquedas</span><b>frente a competencia</b></div>
+            </div>
+          </div>
+          <div class="rep-block">
+            <h4>Qué viene en abril</h4>
+            <ul class="rep-list">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Reforzar contenido, que fue lo que más consultas trajo.</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Pausar la campaña de sábado, no rindió.</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Sumar publicidad como tercer canal en reemplazo.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rep-foot">Ejemplo del formato. Los números que van en cada casilla son los de tu negocio.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 9 · PARA QUIÉN ES ══════════ -->
+<section style="padding-bottom:96px">
+  <div class="slab dark on-dark">
+    <div class="slab-pad">
+      <div class="sec-head rv" style="max-width:760px">
+        <span class="eyebrow on-dark">Para quién es</span>
+        <h2>Para negocios que ya tienen<br><span class="g">algo que hacer crecer.</span></h2>
+      </div>
+      <div class="rubros">
+        <div class="rubro rv"><img src="assets/rubro-restaurantes.jpg" alt="" loading="lazy"><div class="rubro-t"><strong>Restaurantes y cafés</strong><span>Más reservas y más pedidos.</span></div></div>
+        <div class="rubro rv"><img src="assets/rubro-clinicas.jpg" alt="" loading="lazy"><div class="rubro-t"><strong>Clínicas y centros</strong><span>Más consultas agendadas.</span></div></div>
+        <div class="rubro rv"><img src="assets/rubro-servicios.jpg" alt="" loading="lazy"><div class="rubro-t"><strong>Servicios locales</strong><span>Más contactos calificados.</span></div></div>
+        <div class="rubro rv"><img src="assets/rubro-tiendas.jpg" alt="" loading="lazy"><div class="rubro-t"><strong>Tiendas y comercios</strong><span>Más visitas y más ventas.</span></div></div>
+        <div class="rubro rv"><img src="assets/rubro-profesionales.jpg" alt="" loading="lazy"><div class="rubro-t"><strong>Profesionales</strong><span>Más clientes recurrentes.</span></div></div>
+      </div>
+      <div class="fit">
+        <div class="fit-card yes rv">
+          <h3><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg> Es para negocios que</h3>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><span><b>Ya tienen clientes o ventas.</b> Hay una base real sobre la cual construir.</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><span><b>Quieren crecer de forma sostenida.</b> Buscan resultados que duren, no un mes bueno.</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><span><b>Están listos para implementar cambios.</b> Proponemos, ejecutamos y ustedes acompañan.</span></li>
+          </ul>
+        </div>
+        <div class="fit-card no rv">
+          <h3><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg> No es para negocios que</h3>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg><span><b>Aún no tienen producto o servicio definido.</b> Primero hay que construir lo esencial.</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg><span><b>Buscan resultados mágicos en dos semanas.</b> Esto es trabajo mensual, no un truco.</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg><span><b>No quieren cambiar nada de cómo trabajan hoy.</b> Sin ajustes, no hay crecimiento.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 10 · EL PLAN ══════════ -->
+<section class="sec" id="plan" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">El plan</span>
+      <h2>Un solo plan.<br><span class="g">Un solo precio.</span></h2>
+    </div>
+    <div class="plan-grid">
+      <div class="price rv">
+        <div class="price-top">
+          <strong>Plan Crece</strong>
+          <span class="badge">Mes a mes</span>
+        </div>
+        <div class="amount"><b>$240.000</b><span>CLP / mes</span></div>
+        <p>Acompañamiento mensual para negocios que ya funcionan y quieren crecer en serio.</p>
+        <ul>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Trabajo activo en hasta 3 canales</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Estrategia de contenido y posicionamiento</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Optimización de rutas de compra o atención</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Reporte mensual con análisis</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg>Llamada de seguimiento de 30 min</li>
+        </ul>
+        <a class="btn green" target="_blank" rel="noopener" href="https://wa.me/56935049582?text=Hola%2C%20quiero%20contratar%20el%20plan%20Crece%20de%20%24240.000%20CLP/mes.">
+          Quiero el plan Crece
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <p class="price-note">Sin contratos forzados. Cancela cuando quieras.</p>
+      </div>
+      <div class="faq">
+        <div class="faq-item rv">
+          <h3>Qué no incluye, dicho claro</h3>
+          <p style="margin-bottom:10px">Preferimos decírtelo antes y no después de que firmes.</p>
+          <ul style="list-style:none;display:grid;gap:9px">
+            <li style="display:flex;gap:9px;font-size:13px;color:var(--muted)"><span style="color:#D9534F;flex:none;margin-top:2px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></span>La inversión en anuncios. Nosotros gestionamos las campañas, el presupuesto lo defines tú y lo pagas directo a la plataforma.</li>
+            <li style="display:flex;gap:9px;font-size:13px;color:var(--muted)"><span style="color:#D9534F;flex:none;margin-top:2px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></span>Construir un sitio web desde cero. Trabajamos sobre lo que ya tienes.</li>
+            <li style="display:flex;gap:9px;font-size:13px;color:var(--muted)"><span style="color:#D9534F;flex:none;margin-top:2px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></span>Responder a tus clientes por ti. Te dejamos el proceso listo, la atención la haces tú.</li>
+          </ul>
+        </div>
+        <div class="faq-item rv">
+          <h3>¿Vienes del diagnóstico Detecta?</h3>
+          <p>Detecta te dice qué está frenando tu visibilidad. Crece es quien ejecuta ese plan, mes a mes. Si ya lo hiciste, partimos con el trabajo hecho.</p>
+        </div>
+      </div>
+      <div class="plan-media rv"><img src="assets/plan.jpg" alt="Conversación por WhatsApp con el negocio" loading="lazy"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ 11 · PREGUNTAS ══════════ -->
+<section class="sec" id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2>Lo que preguntan<br><span class="g">antes de partir.</span></h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item rv"><h3>¿Cuándo se ven resultados?</h3><p>Los primeros movimientos se notan dentro del primer mes: la ficha ordenada, las reseñas respondiendo, el contenido saliendo. El crecimiento sostenido se construye entre el tercer y el sexto mes, porque es cuando ya hay datos tuyos para decidir bien.</p></div>
+      <div class="faq-item rv"><h3>¿Qué necesito tener antes de empezar?</h3><p>Un producto o servicio definido y clientes reales. No necesitas sitio web ni redes activas. Trabajamos con lo que exista y te decimos qué falta.</p></div>
+      <div class="faq-item rv"><h3>¿Cómo eligen mis 3 canales?</h3><p>El primer mes revisamos tu negocio, tu competencia y por dónde te llegan hoy los clientes. De ahí salen los tres. No es una fórmula igual para todos.</p></div>
+      <div class="faq-item rv"><h3>¿Puedo cambiar de canal más adelante?</h3><p>Sí, y es normal que pase. Cada mes revisamos qué está rindiendo. Si un canal no aporta, lo sacamos y ponemos otro en su lugar.</p></div>
+      <div class="faq-item rv"><h3>¿Quién crea el contenido?</h3><p>Nosotros. Tú lo apruebas antes de que salga. Si prefieres escribir tú y que nosotros solo lo optimicemos, también se puede.</p></div>
+      <div class="faq-item rv"><h3>¿El presupuesto de publicidad está incluido?</h3><p>No. Los $240.000 cubren la gestión de las campañas. La inversión en anuncios la defines tú, la pagas directo a la plataforma y queda a tu nombre.</p></div>
+      <div class="faq-item rv"><h3>¿Cuánto tiempo me va a quitar a mí?</h3><p>Una llamada de 30 minutos al mes y las aprobaciones de contenido, que toman unos minutos. El resto lo hacemos nosotros.</p></div>
+      <div class="faq-item rv"><h3>¿Y si quiero cancelar?</h3><p>Avisas y se termina al cierre del mes en curso. Te entregamos los accesos y todo lo que hicimos queda contigo: la ficha, el contenido y las campañas son tuyas.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 12 · CIERRE ══════════ -->
+<section style="padding-bottom:0" id="wa">
+  <div class="wrap" style="padding:0">
+    <div class="close slab">
+      <div class="close-photo">
+        <picture>
+          <source media="(max-width:820px)" srcset="assets/hero-mobile.jpg">
+          <img src="assets/close-band.jpg" alt="" loading="lazy">
+        </picture>
+      </div>
+      <div class="close-in">
+        <div class="rv">
+          <span class="eyebrow on-dark">El siguiente paso</span>
+          <h2 class="display" style="font-family:'Antonio',sans-serif;text-transform:uppercase">Empieza<br><span class="g">este mes.</span></h2>
+          <p>Escríbenos y en la primera conversación definimos qué canales conviene trabajar en tu negocio. Sin compromiso.</p>
+          <a class="btn green" target="_blank" rel="noopener" href="https://wa.me/56935049582?text=Hola%2C%20quiero%20contratar%20el%20plan%20Crece%20de%20%24240.000%20CLP/mes.">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.53.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.71-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.13-.14.17-.24.25-.41.09-.16.04-.3-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.55-.42l-.48-.01c-.16 0-.43.06-.65.31-.22.24-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.15 3.66.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+            Hablemos por WhatsApp
+          </a>
+        </div>
+        <div></div>
+          <div class="close-list on-dark">
+          <div><span class="chip c1"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="2.6"/></svg></span> Más visibilidad</div>
+          <div><span class="chip c2"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7.5 3v5.5c0 4.3-3.1 7.9-7.5 9-4.4-1.1-7.5-4.7-7.5-9V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg></span> Más confianza</div>
+          <div><span class="chip c3"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 20v-1.6a3.4 3.4 0 0 0-3.4-3.4H6.9a3.4 3.4 0 0 0-3.4 3.4V20"/><circle cx="10" cy="7.5" r="3.4"/><path d="M20.5 20v-1.6a3.4 3.4 0 0 0-2.6-3.3"/></svg></span> Más clientes</div>
+          <div><span class="chip c4"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17.5 9 11l4 4 8-8.5"/><path d="M15 6.5h6v6"/></svg></span> Más crecimiento</div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="foot-in">
+    <a class="logo" href="index.html" aria-label="LOOKally">
+      <span>L</span>
+      <span class="eye" id="e3"><span class="eye-p" id="p3"></span></span>
+      <span class="eye" id="e4"><span class="eye-p" id="p4"></span></span>
+      <span>kally</span>
+    </a>
+    <nav class="foot-links" style="position:static;padding:0;background:none">
+      <a href="index.html">Inicio</a>
+      <a href="detecta.html">Plan Detecta</a>
+      <a href="#plan">Plan Crece</a>
+      <a href="https://wa.me/56935049582?text=Hola%2C%20quiero%20contratar%20el%20plan%20Crece%20de%20%24240.000%20CLP/mes." target="_blank" rel="noopener">Contacto</a>
+    </nav>
+    <span class="foot-c">© 2026 Lookally. Marketing local para negocios que quieren crecer.</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ── nav: contrae el logo al hacer scroll ── */
+  var nav = document.getElementById('nav');
+  var darkBlocks = Array.prototype.slice.call(document.querySelectorAll('.slab.dark, .close, footer'));
+  var ticking = false;
+  var onScroll = function(){
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false;
+      nav.classList.toggle('stuck', window.scrollY > 40);
+      var y = nav.getBoundingClientRect().top + 28; // altura del logo
+      var onDark = darkBlocks.some(function(el){
+        var r = el.getBoundingClientRect();
+        return r.top <= y && r.bottom >= y;
+      });
+      nav.classList.toggle('inv', onDark);
+    });
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+
+  /* ── ojos del logo ── */
+  var pupils = ['p1','p2','p3','p4'].map(function(i){return document.getElementById(i)}).filter(Boolean);
+  var eyes   = ['e1','e2','e3','e4'].map(function(i){return document.getElementById(i)}).filter(Boolean);
+
+  if (!reduce) {
+    document.addEventListener('mousemove', function(ev){
+      eyes.forEach(function(eye, i){
+        var r = eye.getBoundingClientRect();
+        var cx = r.left + r.width/2, cy = r.top + r.height/2;
+        var a = Math.atan2(ev.clientY - cy, ev.clientX - cx);
+        var d = Math.min(Math.hypot(ev.clientX - cx, ev.clientY - cy), 3.2);
+        pupils[i].style.transform = 'translate(' + (Math.cos(a)*d).toFixed(2) + 'px,' + (Math.sin(a)*d).toFixed(2) + 'px)';
+      });
+    }, {passive:true});
+    (function blink(){
+      eyes.forEach(function(eye){ eye.classList.add('blink'); });
+      setTimeout(function(){ eyes.forEach(function(eye){ eye.classList.remove('blink'); }); }, 90);
+      setTimeout(blink, 2600 + Math.random()*3200);
+    })();
+  }
+
+  /* ── preguntas: en celular se abren y cierran ── */
+  document.querySelectorAll('.faq-grid .faq-item').forEach(function(item){
+    var q = item.querySelector('h3'); if(!q) return;
+    q.setAttribute('role','button'); q.setAttribute('tabindex','0'); q.setAttribute('aria-expanded','false');
+    function toggle(){ var o = item.classList.toggle('open'); q.setAttribute('aria-expanded', o ? 'true' : 'false'); }
+    q.addEventListener('click', toggle);
+    q.addEventListener('keydown', function(e){ if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); toggle(); } });
+  });
+
+  /* ── reveals ── */
+  if (reduce) {
+    document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')});
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:0, rootMargin:'0px 0px -60px 0px'});
+    document.querySelectorAll('.rv').forEach(function(el, i){
+      var sibs = el.parentElement.querySelectorAll(':scope > .rv');
+      var idx = Array.prototype.indexOf.call(sibs, el);
+      el.style.transitionDelay = (idx > 0 ? Math.min(idx,5)*70 : 0) + 'ms';
+      io.observe(el);
+    });
+  }
+
+  /* ── entrada del hero ── */
+  document.querySelectorAll('.hero .eyebrow, .hero h1, .hero-sub, .hero-cta, .hero-note').forEach(function(el, i){
+    if (reduce) return;
+    el.style.opacity = 0;
+    el.style.transform = 'translateY(16px)';
+    el.style.transition = 'opacity .8s ease ' + (90 + i*95) + 'ms, transform .8s cubic-bezier(.22,1,.36,1) ' + (90 + i*95) + 'ms';
+    requestAnimationFrame(function(){ requestAnimationFrame(function(){
+      el.style.opacity = 1; el.style.transform = 'none';
+    })});
+  });
+})();
+</script>
+</body>
+</html>
